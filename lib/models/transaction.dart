@@ -31,9 +31,14 @@ class Transaction {
       id: map['id'],
       title: map['title'],
       description: map['description'],
-      amount: double.tryParse(map['amount']) ?? 0.0,
+      amount: map['amount'],
       date: DateTime.fromMicrosecondsSinceEpoch(map['date']),
       // category: map['category']
     );
+  }
+
+  @override
+  String toString() {
+    return 'Transaction{id: $id, title: $title, description: $description, amount: $amount, date: $date}';
   }
 }

@@ -37,6 +37,8 @@ dependencies:
   google_fonts: ^2.1.0
   bezier_chart: ^1.0.17+1
   grouped_list: ^4.1.0
+  sqflite: ^2.0.0+4
+  path_provider: ^2.0.5
   charts_flutter:
     git:
       url: git://github.com/google/charts.git
